@@ -124,16 +124,16 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/RevanthKodati01",
+          href: "https://github.com/RevanthKodati01/wind-fleet-health",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/Wind-Fleet.png",
       video: "",
     },
     {
       title: "RAG-Cite-Eval",
-      href: "https://github.com/RevanthKodati01",
+      href: "https://github.com/RevanthKodati01/rag-cite-eval",
       dates: "2024",
       active: true,
       description:
@@ -152,7 +152,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/RAG Site EVAL.jpeg",
       video: "",
     },
     {
@@ -176,7 +176,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/LADS.png",
       video: "",
     },
   ],
