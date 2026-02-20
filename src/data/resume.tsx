@@ -153,7 +153,7 @@ export const DATA = {
         },
       ],
       image: "", 
-      video: "/RAG-CITE-EVAL.textClipping",
+      video: "public/RAG-SITE-EVAL.mp4",
     },
     {
       title: "LADS (Driver Safety System)",
