@@ -187,7 +187,7 @@ export default function Page() {
               </div>
               
               <BlurFadeText
-                className="text-muted-foreground max-w-[600px] text-sm md:text-base font-sans text-justify"
+                className="text-muted-foreground max-w-[600px] text-base md:text-lg font-sans text-left"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
