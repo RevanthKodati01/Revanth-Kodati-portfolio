@@ -111,7 +111,7 @@ export const DATA = {
     {
       title: "Wind Fleet Health Monitoring",
       href: "https://github.com/RevanthKodati01/wind-fleet-health",
-      dates: "2024",
+      dates: "2026",
       active: true,
       description:
         "Built an end-to-end pipeline for wind turbine SCADA data to support asset health monitoring and early warning insights. Performed data cleaning, validation, and feature engineering on operational sensor signals. Developed baseline anomaly detection and risk scoring to surface abnormal operating patterns.",
@@ -134,7 +134,7 @@ export const DATA = {
     {
       title: "RAG-Cite-Eval",
       href: "https://github.com/RevanthKodati01/rag-cite-eval",
-      dates: "2024",
+      dates: "2026",
       active: true,
       description:
         "Built a production-style RAG system that lets users upload documents and ask questions with grounded citations. Implemented retrieval and ranked source snippets to reduce hallucinations and improve answer traceability. Added a lightweight evaluation runner to sanity-check grounding and citation quality.",
@@ -158,7 +158,7 @@ export const DATA = {
     {
       title: "LADS (Driver Safety System)",
       href: "https://github.com/RevanthKodati01",
-      dates: "2024",
+      dates: "2020",
       active: true,
       description:
         "Developed a driver-monitoring and authorization system leveraging facial recognition and drowsiness detection using CNNs. Deployed model backend as a microservice using Flask and Docker containers; handled concurrent data streams to simulate multi-driver use cases.",
