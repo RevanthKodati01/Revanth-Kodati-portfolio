@@ -169,7 +169,7 @@ export default function Page() {
       <section id="hero">
         <div className="mx-auto w-full max-w-4xl space-y-8">
           <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
-            <div className="gap-2 flex flex-col order-2 md:order-2">
+            <div className="gap-2 flex flex-col order-2 md:order-1">
               <div className="flex flex-col gap-1">
                 <BlurFadeText
                   delay={BLUR_FADE_DELAY}
@@ -195,7 +195,7 @@ export default function Page() {
                 text={DATA.description}
               />
             </div>
-            <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-1">
+            <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border-2 border-black/10 dark:border-white/10 rounded-full shadow-lg ring-4 ring-background transition-all duration-300">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
