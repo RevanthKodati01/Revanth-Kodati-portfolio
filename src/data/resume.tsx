@@ -129,7 +129,7 @@ export const DATA = {
         },
       ],
       image: "/Wind-Fleet.png",
-      video: "",
+      video: "public/WIND-FLEET-HEALTH.mp4",
     },
     {
       title: "RAG-Cite-Eval",
