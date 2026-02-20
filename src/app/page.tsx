@@ -177,7 +177,8 @@ export default function Page() {
                   yOffset={8}
                   text={`Hi, I'm ${DATA.name.split(" ")[0]}`} 
                 />
-                <BlurFade delay={BLUR_FADE_DELAY}>
+                <span className="animate-wave text-3xl sm:text-4xl lg:text-5xl">👋</span>
+                {/* <BlurFade delay={BLUR_FADE_DELAY}>
                   <div className="flex items-center gap-2">
                     <span className="relative flex h-2 w-2">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black dark:bg-white opacity-75"></span>
@@ -187,10 +188,10 @@ export default function Page() {
                       System.Inference_Active // Port:8000
                     </span>
                   </div>
-                </BlurFade>
+                </BlurFade> */}
               </div>
               <BlurFadeText
-                className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl font-sans"
+                className="text-muted-foreground max-w-[600px] md:text-sm md:text-xl font-sans"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
