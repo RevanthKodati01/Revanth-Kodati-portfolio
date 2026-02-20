@@ -166,46 +166,44 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Page() {
   return (
     <main className="min-h-dvh flex flex-col gap-14 relative">
+      {/* Hero Section */}
       <section id="hero">
         <div className="mx-auto w-full max-w-4xl space-y-8">
-          <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
-            <div className="gap-2 flex flex-col order-2 md:order-1">
-              <div className="flex flex-row items-baseline gap-2 pb-1">
-                <BlurFadeText
-                  delay={BLUR_FADE_DELAY}
-                  className="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-5xl text-black dark:text-white"
-                  yOffset={8}
-                  text={`Hi, I'm ${DATA.name.split(" ")[0]}`} 
-                  />
-                  <span className="animate-wave text-3xl sm:text-4xl lg:text-5xl inline-block mb-1">👋</span>
-                {/* <BlurFade delay={BLUR_FADE_DELAY}>
-                  <div className="flex items-center gap-2">
-                    <span className="relative flex h-2 w-2">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black dark:bg-white opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-black dark:bg-white"></span>
-                    </span>
-                    <span className="text-xs font-mono text-black/70 dark:text-white/70 tracking-[0.2em] uppercase">
-                      System.Inference_Active // Port:8000
-                    </span>
-                  </div>
-                </BlurFade> */}
-              </div>
-              <BlurFadeText
-                className="text-muted-foreground max-w-[600px] text-lg md:text-base font-sans"
-                delay={BLUR_FADE_DELAY}
-                text={DATA.description}
-              />
-            </div>
-            <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
+          <div className="gap-6 flex flex-col md:flex-row justify-between items-center md:items-start">
+            
+            {/* 1. Avatar (Profile Picture) - Left Side */}
+            <BlurFade delay={BLUR_FADE_DELAY} className="order-1">
               <Avatar className="size-24 md:size-32 border-2 border-black/10 dark:border-white/10 rounded-full shadow-lg ring-4 ring-background transition-all duration-300">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
+
+            {/* 2. Text Content (Name and Description) - Right Side */}
+            <div className="gap-2 flex flex-col order-2 flex-1">
+              <div className="flex flex-row items-center gap-2 pb-1">
+                <BlurFadeText
+                  delay={BLUR_FADE_DELAY}
+                  className="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-5xl text-black dark:text-white"
+                  yOffset={8}
+                  text={`Hi, I'm ${DATA.name.split(" ")[0]}`} 
+                />
+                <BlurFade delay={BLUR_FADE_DELAY}>
+                  <span className="animate-wave text-3xl sm:text-4xl lg:text-5xl inline-block mb-1">👋</span>
+                </BlurFade>
+              </div>
+              
+              <BlurFadeText
+                className="text-muted-foreground max-w-[600px] text-sm md:text-base font-sans text-justify"
+                delay={BLUR_FADE_DELAY}
+                text={DATA.description}
+              />
+            </div>
           </div>
         </div>
       </section>
 
+      {/* About Section */}
       <section id="about">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
@@ -215,13 +213,14 @@ export default function Page() {
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
-            <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
+            <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert text-justify">
               <Markdown>{DATA.summary}</Markdown>
             </div>
           </BlurFade>
         </div>
       </section>
 
+      {/* Work Section */}
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -236,6 +235,7 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Education Section */}
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
@@ -286,6 +286,7 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Skills Section */}
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
@@ -307,12 +308,14 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Projects Section */}
       <section id="projects">
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <ProjectsSection />
         </BlurFade>
       </section>
 
+      {/* Contact Section */}
       <section id="contact">
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <ContactSection />
