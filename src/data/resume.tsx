@@ -152,8 +152,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/RAG Site EVAL.jpeg", 
-      video: "/RAG Site EVAL.jpeg",
+      image: "/RAG_Site_EVAL.jpeg", 
+      video: "/RAG_Site_EVAL.jpeg",
     },
     {
       title: "LADS (Driver Safety System)",
