@@ -19,9 +19,9 @@ export const DATA = {
   location: "New York, NY",
   locationLink: "https://www.google.com/maps/place/New+York,+NY",
   description:
-    "Data Scientist & Software Engineer building scalable systems and production ML pipelines.",
+    "Software & Data Engineer | Specializing in Scalable Data Pipelines, ML, and Analytics | MS Data Science @ UAlbany",
   summary:
-    "Master's student in Data Science with a strong foundation in software engineering, data engineering, and production ML. Experienced in building data pipelines, dashboards, and predictive models using Python/SQL and deploying scalable systems with cloud-native tooling (AWS, Docker, Kubernetes). Interested in industrial/energy use-cases including asset health monitoring, anomaly detection, and reliability analytics.",
+      " In August 2024, I wrapped up my tenure as a [**Senior Analyst at Capgemini**](https://www.capgemini.com/) to move to New York and bridge the gap between core engineering and advanced analytics through a [**Master’s in Data Science at the University at Albany**](https://www.albany.edu/math/programs/ms-data-science?q=data%20s). In the past, I [**pursued a B.Tech in CS at JNTUH**](https://cmrgroup.edu.in/), built enterprise-scale WMS solutions for global clients, and optimized database modules that improved the reliability of business-critical applications. Currently, I am [**interning at the SUNY Research Foundation**](https://www.rfsuny.org/), where I've built automated ETL pipelines that cut manual refresh times by 80%. I also spend quite a bit of time in the pro-code world, building things like [**RAG-Cite-Eval**](https://github.com/RevanthKodati01/rag-cite-eval)—a production-style system for verifiable document citations—and [**SCADA-based health monitoring**](https://github.com/RevanthKodati01/wind-fleet-health) for wind turbine reliability. I am also a [**double Oracle Certified Professional**] in Generative AI and Data Science.",
   avatarUrl: "/revanth profile.jpeg",
   skills: [
     { name: "Python", icon: Python },
