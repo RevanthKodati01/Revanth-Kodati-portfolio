@@ -170,10 +170,10 @@ export default function Page() {
         <div className="mx-auto w-full max-w-4xl space-y-8">
           <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
             <div className="gap-2 flex flex-col order-2 md:order-1">
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-row items-baseline gap-2 pb-1">
                 <BlurFadeText
                   delay={BLUR_FADE_DELAY}
-                  className="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-5xl text-black dark:text-white pb-1"
+                  className="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-5xl text-black dark:text-white"
                   yOffset={8}
                   text={`Hi, I'm ${DATA.name.split(" ")[0]}`} 
                   />
@@ -191,7 +191,7 @@ export default function Page() {
                 </BlurFade> */}
               </div>
               <BlurFadeText
-                className="text-muted-foreground max-w-[600px] text-sm md:text-base font-sans"
+                className="text-muted-foreground max-w-[600px] text-lg md:text-base font-sans"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
