@@ -169,18 +169,10 @@ export default function Page() {
       {/* Hero Section */}
       <section id="hero">
         <div className="mx-auto w-full max-w-4xl space-y-8">
-          <div className="gap-6 flex flex-col md:flex-row justify-between items-center md:items-start">
+          <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between items-center md:items-start">
             
-            {/* 1. Avatar (Profile Picture) - Left Side */}
-            <BlurFade delay={BLUR_FADE_DELAY} className="order-1">
-              <Avatar className="size-24 md:size-32 border-2 border-black/10 dark:border-white/10 rounded-full shadow-lg ring-4 ring-background transition-all duration-300">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
-            </BlurFade>
-
-            {/* 2. Text Content (Name and Description) - Right Side */}
-            <div className="gap-2 flex flex-col order-2 flex-1">
+            {/* 1. Text Content - Order 2 on mobile (bottom), Order 1 on desktop (left) */}
+            <div className="gap-2 flex flex-col order-2 md:order-1 flex-1">
               <div className="flex flex-row items-center gap-2 pb-1">
                 <BlurFadeText
                   delay={BLUR_FADE_DELAY}
@@ -188,6 +180,7 @@ export default function Page() {
                   yOffset={8}
                   text={`Hi, I'm ${DATA.name.split(" ")[0]}`} 
                 />
+                {/* Synchronized Fade for the Hand Wave */}
                 <BlurFade delay={BLUR_FADE_DELAY}>
                   <span className="animate-wave text-3xl sm:text-4xl lg:text-5xl inline-block mb-1">👋</span>
                 </BlurFade>
@@ -199,6 +192,15 @@ export default function Page() {
                 text={DATA.description}
               />
             </div>
+
+            {/* 2. Avatar (Profile Picture) - Order 1 on mobile (top), Order 2 on desktop (right) */}
+            <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
+              <Avatar className="size-24 md:size-32 border-2 border-black/10 dark:border-white/10 rounded-full shadow-lg ring-4 ring-background transition-all duration-300">
+                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarFallback>{DATA.initials}</AvatarFallback>
+              </Avatar>
+            </BlurFade>
+
           </div>
         </div>
       </section>
