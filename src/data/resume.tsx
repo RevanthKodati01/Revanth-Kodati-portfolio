@@ -152,7 +152,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/RAG Site EVAL.jpeg",
+      image: "/RAG Site EVAL.jpeg", 
       video: "",
     },
     {
