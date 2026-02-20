@@ -110,7 +110,7 @@ export const DATA = {
   projects: [
     {
       title: "Wind Fleet Health Monitoring",
-      href: "https://github.com/RevanthKodati01",
+      href: "https://github.com/RevanthKodati01/wind-fleet-health",
       dates: "2024",
       active: true,
       description:
@@ -148,12 +148,12 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/RevanthKodati01",
+          href: "https://github.com/RevanthKodati01/rag-cite-eval",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/RAG Site EVAL.jpeg", 
-      video: "",
+      video: "/RAG Site EVAL.jpeg",
     },
     {
       title: "LADS (Driver Safety System)",
