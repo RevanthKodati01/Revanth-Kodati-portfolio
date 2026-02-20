@@ -176,8 +176,8 @@ export default function Page() {
                   className="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-5xl text-black dark:text-white pb-1"
                   yOffset={8}
                   text={`Hi, I'm ${DATA.name.split(" ")[0]}`} 
-                />
-                <span className="animate-wave text-3xl sm:text-4xl lg:text-5xl">👋</span>
+                  />
+                  <span className="animate-wave text-3xl sm:text-4xl lg:text-5xl inline-block mb-1">👋</span>
                 {/* <BlurFade delay={BLUR_FADE_DELAY}>
                   <div className="flex items-center gap-2">
                     <span className="relative flex h-2 w-2">
@@ -191,7 +191,7 @@ export default function Page() {
                 </BlurFade> */}
               </div>
               <BlurFadeText
-                className="text-muted-foreground max-w-[600px] md:text-sm md:text-xl font-sans"
+                className="text-muted-foreground max-w-[600px] text-sm md:text-base font-sans"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
